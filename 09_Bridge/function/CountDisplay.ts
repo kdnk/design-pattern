@@ -13,4 +13,11 @@ export class CountDisplay extends Display {
     }
     this.close();
   }
+
+  public randomDisplay(times: number) {
+    const max = Math.floor(times);
+    const t = Math.floor(Math.random() * max);
+    this.multiDisplay(t);
+  }
+
 }
