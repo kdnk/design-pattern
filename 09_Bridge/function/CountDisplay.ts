@@ -20,4 +20,13 @@ export class CountDisplay extends Display {
     this.multiDisplay(t);
   }
 
+  public incrementDisplay(times: number) {
+    for (let i = 0; i < times; i++) {
+      this.open();
+      for (let j = 0; j < i; j++) {
+        this.print();
+      }
+      this.close();
+    }
+  }
 }
