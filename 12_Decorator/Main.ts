@@ -2,6 +2,7 @@ import Display from "./Display";
 import StringDisplay from "./StringDisplay";
 import SideBorder from "./SideBorder";
 import FullBorder from "./FullBorder";
+import UpDownBorder from "./UpDownBorder";
 
 // 飾り枠と中身の同一視
 // スポンジケーキ、ショートケーキ、ストロベリーショートケーキ、バースデーケーキ
@@ -23,6 +24,8 @@ class Main {
       "/"
     );
     b4.show();
+    const b5: Display = new UpDownBorder(b1, "-");
+    b5.show();
   }
 }
 
